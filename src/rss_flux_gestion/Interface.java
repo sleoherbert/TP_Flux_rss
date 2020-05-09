@@ -73,11 +73,11 @@ public interface Interface {
 		Scanner sc = new Scanner(System.in);
 		String scch; 
 		char ch = ' ';
-		System.out.println("Que voulez-vous faire ? \nAjouter un flux \nS: supprimer un compte utilisateur ou un flux\n I: afficher les infos\n Q: Quitter");
+		System.out.println("Que voulez-vous faire ? \nA: Ajouter un flux \nS: supprimer un compte utilisateur ou un flux\n I: afficher les infos\n Q: Quitter");
 		scch = sc.nextLine();
 		ch = scch.charAt(0);
 		while (ch != 'A' && ch != 'S' && ch != 'I' && ch != 'Q') {
-			System.out.println("Veuillez entrer un caractère correct\nAjouter un flux \nS: supprimer un compte utilisateur ou un flux\n I: afficher les infos\n Q: Quitter");
+			System.out.println("Veuillez entrer un caractère correct\nA: Ajouter un flux \nS: supprimer un compte utilisateur ou un flux\n I: afficher les infos\n Q: Quitter");
 			scch = sc.nextLine();
 			ch = scch.charAt(0);
 		}
@@ -100,7 +100,7 @@ public interface Interface {
 		scch = sc.nextLine();
 		ch = scch.charAt(0);
 		while (ch != 'U' && ch != 'F') {
-			System.out.println("Veuillez entrer un caractère correct");
+			System.out.println("Veuillez entrer un caractère correct: U ou F");
 			scch = sc.nextLine();
 			ch = scch.charAt(0);
 		}
@@ -109,7 +109,7 @@ public interface Interface {
 	}
 	
 	/**
-	 * Afficher le sous-menu afficher
+	 * Afficher le sous-menu informtions
 	 * Option : Liste : flux ou User
 	 * @return Amdin choix info à afficher
 	 */
@@ -121,7 +121,7 @@ public interface Interface {
 		scch = sc.nextLine();
 		ch = scch.charAt(0);
 		while (ch != 'U' && ch != 'F') {
-			System.out.println("Veuillez entrer un caractère correct");
+			System.out.println("Veuillez entrer un caractère correct: U ou F");
 			scch = sc.nextLine();
 			ch = scch.charAt(0);
 		}
@@ -417,6 +417,7 @@ public interface Interface {
             System.out.print(meta.getColumnName(i).toUpperCase() + " : " + resq.getObject(i).toString() + "\n");
         }
 	}
+	
 	
 	/**
 	 * Afficher les informations demandées à saisir

@@ -175,7 +175,7 @@ public class Flux {
 	}
 	
 	/**
-	 * Compter le nombre d'abonnés d'un flux
+	 * Recuperer le nombre d'abonnés d'un flux
 	 * @return Le nombre d'abonnés
 	 */
 	public int nbAbos () throws SQLException {
@@ -195,7 +195,7 @@ public class Flux {
 	}
 	
 	/**
-	 * Modification du nombre d'abonnés au flux dans la base de données
+	 *Ajouter/Modifier du nombre d'abonnés au flux dans la base de données
 	 * @param abon Le nouveau nombre d'abonnés
 	 */
 	public void ajoutAbos (int abon) throws SQLException {
